@@ -1,0 +1,16 @@
+.contentContainer{
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 91vh;
+    display: flex;
+    flex-direction: row;
+    background-color:#f4f4f4;
+}
+
+
+
+@media only screen and (max-width: 900px){
+    .contentContainer{
+        flex-direction: column;
+    }
+}

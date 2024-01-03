@@ -1,0 +1,127 @@
+.mcContainer{
+    /* background-color: #fff; */
+    margin: 1rem auto;
+    max-width: 78%;
+    min-width: 78%;
+    height: 91vh;
+    overflow-y: scroll;
+    /* border: 1px solid blue; */
+}
+
+.mcUpper{
+    /* border: 1px solid blue; */
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-top: .7em; */
+}
+
+.heading{
+    /* border: 1px solid blue; */
+    color: rgb(34, 34, 34);
+}
+
+.date{
+color: grey;
+}
+
+.leftButtons{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+}
+#greyBtn, #greenBtn{
+    cursor: pointer;
+    border: none;
+    padding: .8em 2em;
+    margin: 0 .6em;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#greyBtn{
+    background-color: #e3e3e3;
+    color: black;
+}
+#greenBtn{
+    background-color: #00cc66;
+    color: white;
+}
+
+/* Middle css starts */
+.mcMiddle{
+    margin: 1em 0;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content:stretch;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.card{
+    /* border: 1px solid blue; */
+    position: relative;
+    width: 24.9%;
+    padding: .8em .5em .5em 2.3em;
+}
+.expand{
+    position: absolute;
+    right: 20px;
+    color: #d9d2d2;
+}
+.cardIcon{
+    min-width: 1.6em;
+    max-width: 1.6em;
+    min-height: 1.6em;
+    max-height: 1.6em;
+    padding: 6px;
+    cursor: pointer;
+    background-color: rgb(227, 227, 227);
+    border-radius: 50%;
+}
+.cardName{
+    color: rgb(34, 34, 34);
+    /* font-size: small; */
+}
+.count{
+    font-weight: 600;
+    font-size: larger;
+}
+.rightBorder{
+    width: 1px;
+    height: 2.5em;
+    background: #d6d5d5;
+}
+
+
+
+
+
+@media only screen and (max-width: 900px){
+    .mcContainer{
+        min-width: 100%;
+        padding: .5em;
+    }  
+    .card{
+        width: 23.8%;  
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .heading{
+        width: 50%;
+    }
+    .leftButtons{
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #greyBtn, #greenBtn{
+        margin: .6em .6em;   
+    }
+    .card{
+        width: 49.5%;  
+    }
+
+}

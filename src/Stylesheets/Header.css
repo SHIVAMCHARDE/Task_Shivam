@@ -1,0 +1,79 @@
+.hContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowwrap;
+    width: 100vw;
+    height: 9vh;
+    margin: 0 auto ;
+    padding: 0 .5rem 0 2rem;
+    /* border: 1px solid black; */
+}
+
+.hLeft{
+    /* border: 1px solid black; */
+    min-width: 15vw;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 600;
+    letter-spacing: .1em;
+    color: green;
+    
+}
+.hRight{
+    /* border: 1px solid black; */
+    min-width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.headerProfileImg{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0 1em;
+}
+
+.hIcon{
+    margin: 0 .5em;
+    cursor: pointer;
+}
+.user{
+    min-width: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    padding: .1em 1em .1em .3em;
+}
+.headerProfileName{
+    min-width: 3.3em;
+    font-size: .8em;
+}
+
+@media only screen and (max-width: 600px){
+    .hIcon{
+        margin: 0 .3em;
+    }
+}
+@media only screen and (max-width: 460px){
+    .hIcon{
+        margin: 0 .4em;
+    }
+    .user{
+        padding: 0;
+        margin: 0 .4em;
+    }
+    .headerProfileImg{
+        margin: 0;
+    }
+    .headerProfileName{
+        display: none;
+    }
+    
+}
+
